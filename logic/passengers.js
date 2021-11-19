@@ -1,9 +1,9 @@
 function Passengers() {
-    checkFlightCapacity = (capacity, passengersNumbers) => {
-        passengersNumbers = 0
-        passengersNumbers.forEach((number) => passengersNumbers += number)
-        if (passengersNumbers > capacity) {
-            throw new Error("Flight capacity (" + flightCapacity + ") exceeded. You have " + passengersNumber + " passengers.");
+    checkFlightCapacity = (capacity, passengersArray) => {
+        passengersNumber = 0
+        passengersArray.forEach((number) => passengersNumber += number)
+        if (passengersNumber > capacity) {
+            throw new Error("Flight capacity (" + capacity + ") exceeded. You have " + passengersNumber + " passengers.");
         } return passengersNumber;
     }
     return {checkFlightCapacity}
