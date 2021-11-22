@@ -4,7 +4,15 @@ function Util() {
         Object.keys(distributedPassengers).forEach((k) => totalDistributedPassengers += distributedPassengers[k])
         return totalDistributedPassengers
     }
-    return {calculateTotalDistributedPassengers}
+
+    calculateTotalNumberOfPassengers = (passengersArray) => {
+        totalNumberOfPassengers = 0
+        passengersArray.forEach((p) => totalNumberOfPassengers += p)
+        return totalNumberOfPassengers
+    }
+    return {calculateTotalDistributedPassengers, calculateTotalNumberOfPassengers}
+
+
 }
 
 module.exports = Util();
