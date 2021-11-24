@@ -28,7 +28,7 @@ function Prices() {
         return finalPrice
     }
 
-    return {calculateFinalPrice, calculateDefaultFinalPrice, calculateFinalPrice}
+    return {calculateFinalPrice, calculateDefaultFinalPrice, calculateTotalFinalPrice}
 
 }
 
