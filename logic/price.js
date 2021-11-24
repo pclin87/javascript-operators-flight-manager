@@ -23,7 +23,12 @@ function Prices() {
         return finalPrice.toFixed(2)
     }
 
-    return {calculateFinalPrice, calculateDefaultFinalPrice}
+    calculateTotalFinalPrice = (numberOfSeats, passengerType, flightType, basePrice) => {
+        finalPrice = numberOfSeats * calculateDefaultFinalPrice(basePrice, passengerType, flightType)
+        return finalPrice
+    }
+
+    return {calculateFinalPrice, calculateDefaultFinalPrice, calculateFinalPrice}
 
 }
 
