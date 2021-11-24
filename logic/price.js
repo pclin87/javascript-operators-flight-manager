@@ -22,7 +22,7 @@ function Prices() {
         }
     }
 
-    return {calculateFinalPrice}
+    return {calculateFinalPrice, calculateDefaultFinalPrice}
 
 }
 
