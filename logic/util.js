@@ -10,9 +10,13 @@ function Util() {
         passengersArray.forEach((p) => totalNumberOfPassengers += p)
         return totalNumberOfPassengers
     }
-    return {calculateTotalDistributedPassengers, calculateTotalNumberOfPassengers}
 
+    
+    checkInput = (input) => {
+        if(input === null || input === NaN) throw new Error ('input is not a number')
+    }
 
+    return {calculateTotalDistributedPassengers, calculateTotalNumberOfPassengers, checkInput}
 }
 
 module.exports = Util();
