@@ -16,7 +16,17 @@ function Util() {
         if(!input || isNaN(input)) throw new Error ('input is not a number')
     }
 
-    return {calculateTotalDistributedPassengers, calculateTotalNumberOfPassengers, checkInput}
+    calculateTotalDistance = (distancesArray) => {
+        totalDistance = 0
+        distancesArray.forEach((d) => {
+            if (d > 0 ) {
+                totalDistance += d
+            }
+            return totalDistance
+        })
+    }
+
+    return {calculateTotalDistributedPassengers, calculateTotalNumberOfPassengers, checkInput, calculateTotalDistance}
 }
 
 module.exports = Util();
