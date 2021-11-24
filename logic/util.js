@@ -27,7 +27,7 @@ function Util() {
     }
 
     calculateBonusPoints = (businessDistancesArray, economyDistancesArray, businessBonus, economyBonus) => {
-        totalBonus = calculateTotalDistance(businessDistancesArray) * businessBonus + calculateTotalDistance(economyDistancesArray) * economyBonus
+        totalBonus = (calculateTotalDistance(businessDistancesArray) * businessBonus)/100 + (calculateTotalDistance(economyDistancesArray) * economyBonus)/100
         return totalBonus
     }
 
