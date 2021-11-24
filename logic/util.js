@@ -13,7 +13,7 @@ function Util() {
 
     
     checkInput = (input) => {
-        if(input === null || input === NaN) throw new Error ('input is not a number')
+        if(!input || isNaN(input)) throw new Error ('input is not a number')
     }
 
     return {calculateTotalDistributedPassengers, calculateTotalNumberOfPassengers, checkInput}
