@@ -19,7 +19,7 @@ function Util() {
     calculateTotalDistance = (distancesArray) => {
         totalDistance = 0
         distancesArray.forEach((d) => {
-            if (d > 0 ) {
+            if (d >= 0 ) {
                 totalDistance += d
             }
             return totalDistance
