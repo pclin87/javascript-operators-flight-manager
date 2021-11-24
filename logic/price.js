@@ -20,7 +20,7 @@ function Prices() {
             case 'business': finalPrice *= 1.10;
             break; 
         }
-        return finalPrice
+        return finalPrice.toFixed(2)
     }
 
     return {calculateFinalPrice, calculateDefaultFinalPrice}
