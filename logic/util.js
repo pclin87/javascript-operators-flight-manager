@@ -26,7 +26,12 @@ function Util() {
         return totalDistance
     }
 
-    return {calculateTotalDistributedPassengers, calculateTotalNumberOfPassengers, checkInput, calculateTotalDistance}
+    calculateBonusPoints = (businessDistancesArray, economyDistancesArray, businessBonus, economyBonus) => {
+        totalBonus = calculateTotalDistance(businessDistancesArray) * businessBonus + calculateTotalDistance(economyDistancesArray) * economyBonus
+        return totalBonus
+    }
+
+    return {calculateTotalDistributedPassengers, calculateTotalNumberOfPassengers, checkInput, calculateTotalDistance, calculateBonusPoints}
 }
 
 module.exports = Util();
