@@ -20,6 +20,7 @@ function Prices() {
             case 'business': finalPrice *= 1.10;
             break; 
         }
+        return finalPrice
     }
 
     return {calculateFinalPrice, calculateDefaultFinalPrice}
